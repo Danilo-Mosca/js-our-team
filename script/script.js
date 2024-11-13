@@ -22,12 +22,12 @@ let template = '';
 // un template dove inseriro le card
 for (let valore of teamMembers) {
   template += `
-  <div class="card d-flex flex-row flex-wrap col-sm-12 col-md-4 col-lg-4 gap-4 mx-3 my-3" id="card">
+  <div class="cards d-flex flex-row flex-wrap col-sm-12 col-md-6 col-xl-4" id="card">
     <div class="image-content debug">
       <img class="image-team" src="${valore.img}" alt="${valore.name}">
     </div>
-    <div class="debug team-content">
-    <p class="name">${valore.name}</p>
+    <div class="team-content d-flex flex-column justify-content-center">
+    <h2 class="name">${valore.name}</h2>
       <p class="role">${valore.role}</p>
       <p class="email">${valore.email}</p>
     </div>

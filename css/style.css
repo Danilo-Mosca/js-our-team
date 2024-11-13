@@ -1,4 +1,9 @@
-* Reset */
+/* Palette colori */
+:root {
+    --color-mail: #1F64C1;
+}
+
+/* Reset  */
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +14,21 @@
     border: 1px solid red;
 }
 
+/* Imposto il contenitore dell'immagine ad una grandezza massima
+del 30% del suo contenitore padre che è il div card */
 .image-content {
     width: 30%;
+    height: 100%;
 }
+
+.team-content {
+    width: calc(100% - 30%);
+}
+
 /* Classe fluida per le immagini */
-.image-content img.image-team  {
+.image-content img.image-team {
     width: 100%;
+    height: 100%;
     max-width: 100%;
     display: block;
     /* Riempio l'immagine nel contenitore mantenendo le
@@ -29,14 +43,25 @@ body {
     font-style: normal;
     font-weight: 100;
 }
-.card{
+
+.cards {
     background-color: black;
-}
-.card .name, .card .role, .card .email {
-    color: white;
-    padding: 10px;
+    height: 150px;
 }
 
-.team-content {
-    /* width: calc((100% - 35%) - 9px); */
+.cards .name,
+.cards .role,
+.cards .email {
+    color: white;
+    padding-left: 20px;
+}
+
+/* Sovrascrivo il color: white; di sopra per la classe email */
+.cards .email {
+    color: var(--color-mail);
+    font-weight: 800;
+}
+
+h2 {
+    text-transform: uppercase;
 }
