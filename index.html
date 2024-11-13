@@ -26,11 +26,32 @@
             doloremque aspernatur, magni excepturi libero quaerat fugit pariatur facilis quas commodi. Praesentium ex
             placeat, nesciunt magnam temporibus sit adipisci fugit deserunt neque sapiente ducimus, iusto rem quas atque
             laboriosam quibusdam. Alias ea eum aliquam quae?</p>
-        <div class="container-fluid debug">
+        <div class="container-fluid">
             <div class="row justify-content-between g-3" id="wrapper">
                 <!-- In questa zona andranno le card generate con Javascript -->
             </div>
         </div>
+    </section>
+
+    <section class="my-5">
+        <form id="addMember">
+            <label for="addName" class="form-label">Nome:</label>
+            <input class="form-control mb-3" type="text" placeholder="Inserisci il nome" id="addName" required>
+
+            <label for="addRole" class="form-label">Ruolo:</label>
+            <input class="form-control mb-3" type="text" placeholder="Inserisci il tuo ruolo" id="addRole" required>
+
+            <label for="addImage" class="form-label">Immagine:</label>
+            <input class="form-control mb-3" type="text" placeholder="Inserisci una foto" id="addImage" required>
+
+            <div class="mb-3">
+                <label for="addEmail" class="form-label">Indirizzo email:</label>
+                <input type="email" class="form-control" placeholder="Inserisci un indirizzo email valido" id="addEmail"
+                    required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Salva</button>
+        </form>
     </section>
     <!-- Scripts -->
     <script src="script/objectdb.js"></script>
