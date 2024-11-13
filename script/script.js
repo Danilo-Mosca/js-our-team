@@ -21,10 +21,11 @@ function drawCards() {
   let template = '';
   // Ciclo for..of che andrà a ciclare l'oggetto teamMembers e creerà
   // un template dove inseriro le card
+  let idCounter = 0;    // Contatore associato all'id (che deve essere univoco)
   for (let valore of teamMembers) {
     template += `
   <div class="col-sm-12 col-md-6 col-xl-4">
-    <div class="cards d-flex flex-row flex-wrap" id="card">
+    <div class="cards d-flex flex-row flex-wrap" id="card-${idCounter}">
       <div class="image-content">
         <img class="image-team" src="${valore.img}" alt="${valore.name}">
       </div>
@@ -35,8 +36,10 @@ function drawCards() {
       </div>
     </div>
   </div>`;
-
-
+  
+  idCounter++;      // Incremento il contatore così da assegnare un id diverso per ogni card
+  // console.log(template);
+  
   }
   // Aggiungo l'hatml nella pagina
   container.innerHTML = template;
