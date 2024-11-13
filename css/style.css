@@ -1,0 +1,33 @@
+* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+/* Classe fluida per le immagini */
+img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    /* Riempio l'immagine nel contenitore mantenendo le
+    sue proporzioni ma ritagliando eventualmente i
+    bordi per adattarla al suo contenitore */
+    object-fit: cover;
+}
+
+body {
+    margin: 50px;
+    font-family: "Coiny", system-ui;
+    font-style: normal;
+    font-weight: 100;
+}
+.card{
+    background-color: green;
+    padding: 8px;
+    width: calc(100% / 3);
+}
