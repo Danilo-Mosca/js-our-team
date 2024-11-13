@@ -9,8 +9,11 @@
     border: 1px solid red;
 }
 
+.image-content {
+    width: 30%;
+}
 /* Classe fluida per le immagini */
-img {
+.image-content img.image-team  {
     width: 100%;
     max-width: 100%;
     display: block;
@@ -27,7 +30,13 @@ body {
     font-weight: 100;
 }
 .card{
-    background-color: green;
-    padding: 8px;
-    width: calc(100% / 3);
+    background-color: black;
+}
+.card .name, .card .role, .card .email {
+    color: white;
+    padding: 10px;
+}
+
+.team-content {
+    /* width: calc((100% - 35%) - 9px); */
 }
