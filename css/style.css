@@ -36,6 +36,12 @@ del 30% del suo contenitore padre che è il div card */
     bordi per adattarla al suo contenitore */
     object-fit: cover;
 }
+/* Aggiungo delle transizioni all'hover del mouse sull'immagine */
+.image-content img.image-team:hover {
+    transform: scale(0.9, 0.9);
+    transition: all 1s;
+    opacity: 0.9;
+}
 
 body {
     margin: 50px;
